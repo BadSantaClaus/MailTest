@@ -44,7 +44,7 @@ public class MailRuSteps {
         enterLogin.click();
 
         currentEmail.shouldBe(Condition.visible);
-        assertThat(currentEmail.getValue()).as("Проверить, что логин введен корректно").isEqualTo(username);
+        assertThat(currentEmail.getText()).as("Проверить, что логин введен корректно").isEqualTo(username);
     }
 
     public void setPassword(String password) {
