@@ -1,0 +1,13 @@
+# Контур dev
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+service:
+  mail_ru:
+    host: https://mail.ru
+
+creds:
+  common_username: roman-gor@bk.ru
+  common_password: SK8hekbn
