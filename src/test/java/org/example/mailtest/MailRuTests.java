@@ -19,20 +19,19 @@ class MailRuTests {
     @Autowired
     private MailRuSteps mailRuSteps;
 
-    @Value("${creds.common_username}")
+    @Value("${creds.username}")
     private String commonUsername;
-    @Value("${creds.common_password}")
+    @Value("${creds.password}")
     private String commonPassword;
 
     @Test
     @DisplayName("Проверка отправки сообщения самому себе")
     public void selfMessageTest() {
-        String email = "test@mail.ru";
         String message = "test";
 
         mailRuSteps
                 .authorize(commonUsername, commonPassword)
-                .sendMessage(email, message);
+                .sendMessage(commonUsername, message);
     }
 
 }

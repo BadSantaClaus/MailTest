@@ -9,5 +9,5 @@ service:
     host: https://mail.ru
 
 creds:
-  common_username: roman-gor@bk.ru
-  common_password: SK8hekbn
+  username: username@mail.ru
+  password: password
