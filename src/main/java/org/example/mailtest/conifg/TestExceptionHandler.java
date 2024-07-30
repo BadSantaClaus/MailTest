@@ -11,7 +11,7 @@ public class TestExceptionHandler implements TestExecutionExceptionHandler {
     @Override
     public void handleTestExecutionException(ExtensionContext extensionContext, Throwable throwable) throws Throwable {
         try {
-            TestUtils.takeScreenshot();
+            TestUtils.takeScreenshot("Fail screenshot");
         } catch (Exception | Error ignored) {
         }
         throw throwable;

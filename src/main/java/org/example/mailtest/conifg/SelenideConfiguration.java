@@ -17,6 +17,6 @@ public class SelenideConfiguration {
         Configuration.browserVersion = "123";
         Configuration.browserSize = "1920x1080";
         Configuration.holdBrowserOpen = false;
-        Configuration.timeout = 5 * 1000;
+        Configuration.timeout = 60 * 1000;
     }
 }

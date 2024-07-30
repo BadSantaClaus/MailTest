@@ -32,8 +32,7 @@ public class UiTextBox {
     }
 
     public void clear() {
-        TestUtils.step(String.format("Очистить поле '%s'", name));
-        element.scrollIntoView(true).setValue(Keys.chord(Keys.CONTROL, "a") + Keys.DELETE);
+        element.scrollIntoView(true).setValue(Keys.chord(Keys.COMMAND, "a") + Keys.DELETE);
     }
 
 }
